@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rigid2D;
     Animator animator;
     float jumpForce = 680.0f;
-    float walkForce = 30.0f;
+    float walkForce = 25.0f;
     float maxWalkspeed = 2.0f;
 
     // Start is called before the first frame update
@@ -52,8 +52,9 @@ public class PlayerController : MonoBehaviour
         this.animator.speed = speedx / 2.0f;
 
         //화면 밖 제어
-        if(transform.position.y < -10)
+        if(transform.position.y < -20)
         {
+
             SceneManager.LoadScene("GameScene");
         }
 
