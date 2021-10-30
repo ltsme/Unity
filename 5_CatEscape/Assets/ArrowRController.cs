@@ -18,7 +18,7 @@ public class ArrowRController : MonoBehaviour
         GameObject director = GameObject.Find("GameDirector"); // find메소드로 GameDirector 오브젝트를 찾기.
 
         // 화살 하락
-        transform.Translate(0, -0.07f, 0);
+        transform.Translate(0, -0.12f, 0);
 
         //화살 소멸
         if (transform.position.y < -5.0f)
